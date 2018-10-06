@@ -48,6 +48,6 @@ Bruv do check this piece of code. You may be running out of Dimension @ the end 
                                        `pad=True, name='second_conv')(h)`
             `r = C.layers.Dense(num_output_classes, activation=None, name='classify')(h)`
             `return r`
-            
+           
  Am yet to try it thanks to my environment issues. :(
  
