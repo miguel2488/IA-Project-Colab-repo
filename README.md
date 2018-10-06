@@ -23,3 +23,9 @@ https://prod-edxapp.edx-cdn.org/assets/courseware/v1/381051f61c79b0af4d0ea8cf4da
  1. You should concatenate horizontally c and v images for the same sample, you will get a new image having c and v horizontally stacked. Here is how to do it: https://kanoki.org/2017/07/12/merge-images-with-python/ .    
  
  2. You can manage with a simple model Convolution1D having 32 filters with filter kernel equal to the image width , stride 1.  Add the dense output image afterwards. This means you will feed all image data as a full 1D vector for each pixel (not 2D as in course).    
+
+#### Progress till now 06/09/18
+
+Hi Daniel i have been working hard today on this thing, and i have more good news, i have fixed (at least, partially) the issue with the text files. The last time we talked it seemed pretty messy, now it has the aspect that it should. But i'm still not 100% sure that the labels are ok in the text files. If you take a look at the train file you'll see that it's only labeling 2 of the 11 classes, that doens't seem right to me.
+
+I've added my personal work notebook here so you can track what i've done by now, we are very very close to achieving this task. The main problem now relay under the do_training function, which is throwing a shape error, as i'll go to sleep now (2:22 a.m. here) i'll leave you have a glance at what i've done. I hope you can figure out what's wrong and hopefully when i wake up tomorrow we can have a working model. :D Good luck my friend. Don't forget to post any progress you make once you've finished ;)
