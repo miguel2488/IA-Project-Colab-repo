@@ -53,3 +53,10 @@ Bruv do check this piece of code. You may be running out of Dimension @ the end 
  
  
  If this solves it then it will auto resolve the second error as its related to create_model(x)
+
+
+#### My progress up to 07/10
+
+Well, today i tried a lot of things, i broke my head figuring out a way of getting this thing done, but i found the CNN was a dead end, i'm totally lost about how to fix this dimension error, i tried playing with the strides and the other parameters as well like you said, but none of it worked.
+
+I tried a diferent approach, i figured out a new way of preparing the data and loading it to CNTK, and tried to follow the most basic example of logistic regression, based on the tutorials. It all goes nice, and i had hope, but then it failed in the test/eval part. There's some problem with the txt file of the test data, i'm also lost about how to deal with it. I hope you'll have better chance. I uploaded the logistic regression notebook so you can take a look at it and try to continue the job, and you akso have the csv with the test data id's, so you can use it with to load the test data into an array with the code of my first notebook. Good luck buddy!! i hope we can finish this soon ;)
