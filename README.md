@@ -87,3 +87,14 @@ I am hoping to get the train / test file right and try running
  b. Use the txt files and run in azure ml studio for comparison.
 
 Buddy am on a wild exploration here hoping to catch something soon.
+
+
+#### Update 08/10
+
+Hi Daniel, i saw your reviews right now. Well, as far as i know, we divide by 255 because the pixel values in an array of images falls between 0 and 255, that would be the theoretic max, and that's why the data is scaled like that.
+
+As for the train file, if you check the loading data code in the logistic regression notebook, you'll see is different (maybe better) to the old one, anyway i don't think we should discard anything by now, just keep trying with both. 
+
+### Important Update
+
+Man i got a working CNN model, yet the score is too bad and is really not useful to pass the capstone. I have uploaded that notebook so you can have a look at it. I also managed to get a working logistic regression model and i scored 75% in the competition. However, we need to score +85% to pass here. Try with logistic regression and see if you can fine tune things or something, same with the CNN, i'm actually working on that too. I'll let you know if i make any further progress. By the way, each time you add something here please hit me in linkedin so i can come check it out in at the same moment ;)
