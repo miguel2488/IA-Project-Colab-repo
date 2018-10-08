@@ -81,8 +81,9 @@ The evidence ( z⃗ z→ ) is not squashed (hence no activation). Instead the ou
 The evidence ($\vec{z}$) is not squashed (hence no activation). Instead the output is normalized using a [softmax](https://en.wikipedia.org/wiki/Softmax_function) function such that all the outputs add up to a value of 1, thus lending a probabilistic iterpretation to the prediction. In CNTK, we use the softmax operation combined with the cross entropy error as our Loss Function for training.
 
 #### Alternative approach
-I am hoping to get the train / test file right and try running :
-a. In Jupyter Notebook
-b. Use the txt files and run in azure ml studio for comparison.
+I am hoping to get the train / test file right and try running 
+
+ a. In Jupyter Notebook
+ b. Use the txt files and run in azure ml studio for comparison.
 
 Buddy am on a wild exploration here hoping to catch something soon.
