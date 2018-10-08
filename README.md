@@ -60,3 +60,26 @@ Bruv do check this piece of code. You may be running out of Dimension @ the end 
 Well, today i tried a lot of things, i broke my head figuring out a way of getting this thing done, but i found the CNN was a dead end, i'm totally lost about how to fix this dimension error, i tried playing with the strides and the other parameters as well like you said, but none of it worked.
 
 I tried a diferent approach, i figured out a new way of preparing the data and loading it to CNTK, and tried to follow the most basic example of logistic regression, based on the tutorials. It all goes nice, and i had hope, but then it failed in the test/eval part. There's some problem with the txt file of the test data, i'm also lost about how to deal with it. I hope you'll have better chance. I uploaded the logistic regression notebook so you can take a look at it and try to continue the job, and you akso have the csv with the test data id's, so you can use it with to load the test data into an array with the code of my first notebook. Good luck buddy!! i hope we can finish this soon ;)
+
+#### My Review   -  08th October 2018 I am looking @ the below Items
+I have suspision on the data `(train.txt)` I am trying to decipher this. yes we have the file but my suspicion is that the mapping is not correct.
+#### Weight Matrix of Dimemnsion 128*118 
+This weight should be the one we use to scale in this line. Currently you are dividing by 255.0.
+
+`# scale the input to 0-1 range by dividing each pixel by 255`
+`z = create_model(input/4913)`
+
+The first step is to compute the evidence for an observation. 
+
+$$\vec{z} = \textbf{W} \bf \vec{x}^T + \vec{b}$$ 
+
+where $\bf{W}$ is the weight matrix of dimension 10 x 784 and $\vec{b}$ is known as the *bias* vector with lenght 10, one for each digit. 
+
+The evidence ($\vec{z}$) is not squashed (hence no activation). Instead the output is normalized using a [softmax](https://en.wikipedia.org/wiki/Softmax_function) function such that all the outputs add up to a value of 1, thus lending a probabilistic iterpretation to the prediction. In CNTK, we use the softmax operation combined with the cross entropy error as our Loss Function for training.
+
+#### Alternative approach
+I am hoping to get the train / test file right and try running :
+a. In Jupyter Notebook
+b. Use the txt files and run in azure ml studio for comparison.
+
+Buddy am on a wild exploration here hoping to catch something soon.
