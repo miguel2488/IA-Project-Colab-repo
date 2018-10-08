@@ -98,3 +98,13 @@ As for the train file, if you check the loading data code in the logistic regres
 ### Important Update
 
 Man i got a working CNN model, yet the score is too bad and is really not useful to pass the capstone. I have uploaded that notebook so you can have a look at it. I also managed to get a working logistic regression model and i scored 75% in the competition. However, we need to score +85% to pass here. Try with logistic regression and see if you can fine tune things or something, same with the CNN, i'm actually working on that too. I'll let you know if i make any further progress. By the way, each time you add something here please hit me in linkedin so i can come check it out in at the same moment ;)
+
+#### Other tool
+Dear Buddy, this is fantastic. I bumped into another tool when I was going around checking the stuff. After the course we could try it out and see how good it is.
+
+https://app.deepcognition.ai
+
+
+I will test the file in my wifes laptop, my environment in the house is screwed :(, I can only make much effort @ the office. Let me try from VM as well
+
+
