@@ -113,3 +113,6 @@ Hi buddy i looked at the link you posted here, it looks good, similar to azure M
 
 I've fixed the notebook and now it's been tested and run, everything seems cool now you should be able toplay with it a little bit. As for the tutorial i've said before, here's the [link](http://adventuresinmachinelearning.com/microsoft-cntk-tutorial/). I hope we have soon arrived to a good term with this thing :D
 
+#### Update 2:
+
+Well man, this is seriously messed up, i went through the CNN i've built and tried to debug the lack of convergence in the model, i fed the model with random data generated with numpy and guess what, it converged. This means that there could be a problem with the data processing source, though this sounds strange  to me because with logistic regression i scored a 75% in the competition, i'm not really sure about what to think of this. I've uploaded the notebook so you can have a look at it and make some guesses. Tell me if you find something buddy.
