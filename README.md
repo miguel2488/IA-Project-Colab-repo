@@ -67,13 +67,16 @@ I have suspision on the data `(train.txt)` I am trying to decipher this. yes we 
 This weight should be the one we use to scale in this line. Currently you are dividing by 255.0.
 
 `# scale the input to 0-1 range by dividing each pixel by 255`
-`z = create_model(input/4913)`
+`z = create_model(input/255)`
 
-The first step is to compute the evidence for an observation. 
+The first step is to compute the evidence for an observation.
 
-$$\vec{z} = \textbf{W} \bf \vec{x}^T + \vec{b}$$ 
+z⃗ =Wx⃗ T+b⃗ 
+z→=Wx→T+b→
+ 
+where  WW  is the weight matrix of dimension 10 x 784 and  b⃗ b→  is known as the bias vector with lenght 10, one for each digit.
 
-where $\bf{W}$ is the weight matrix of dimension 10 x 784 and $\vec{b}$ is known as the *bias* vector with lenght 10, one for each digit. 
+The evidence ( z⃗ z→ ) is not squashed (hence no activation). Instead the output is normalized using a softmax function such that all the outputs add up to a value of 1, thus lending a probabilistic iterpretation to the prediction. In CNTK, we use the softmax operation combined with the cross entropy error as our Loss Function for training. 
 
 The evidence ($\vec{z}$) is not squashed (hence no activation). Instead the output is normalized using a [softmax](https://en.wikipedia.org/wiki/Softmax_function) function such that all the outputs add up to a value of 1, thus lending a probabilistic iterpretation to the prediction. In CNTK, we use the softmax operation combined with the cross entropy error as our Loss Function for training.
 
