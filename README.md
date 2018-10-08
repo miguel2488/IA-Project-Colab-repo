@@ -83,7 +83,7 @@ The evidence ($\vec{z}$) is not squashed (hence no activation). Instead the outp
 #### Alternative approach
 I am hoping to get the train / test file right and try running 
 
- a. In Jupyter Notebook
+ a. In Jupyter Notebook.
  b. Use the txt files and run in azure ml studio for comparison.
 
 Buddy am on a wild exploration here hoping to catch something soon.
