@@ -107,4 +107,9 @@ https://app.deepcognition.ai
 
 I will test the file in my wifes laptop, my environment in the house is screwed :(, I can only make much effort @ the office. Let me try from VM as well
 
+#### Update:
+
+Hi buddy i looked at the link you posted here, it looks good, similar to azure ML, maybe you can try working from there, but i'm not sure about how to work with real code in that platform, anyway i saw there are jupyter notebooks so it could be a good thing for you to work over there.
+
+I've fixed the notebook and now it's been tested and run, everything seems cool now you should be able toplay with it a little bit. As for the tutorial i've said before, here's the [link](http://adventuresinmachinelearning.com/microsoft-cntk-tutorial/). I hope we have soon arrived to a good term with this thing :D
 
