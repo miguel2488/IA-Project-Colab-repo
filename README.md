@@ -122,3 +122,11 @@ Well man, this is seriously messed up, i went through the CNN i've built and tri
 Man the notebook is there, all you need to do is run it. This should give you a passing score. If you see you are close to get the good score but you are still missing something, just play with the num_samples_per_sweep param, increment it by 20000 at a time and run it again, watch well the loss-error output, you want it to be the closest to 0 as possible but watch out!! if you see a lot succesive batches with 0 error and 0 loss you have probably overfit the model, dont overtrain it too much. Feel free to tweak other parameters as well, the most important are the learner, the learning rate, the minibatch size, and the num samples per sweep as well as the layers of the model. Have fun my man, it's done now. If you have any problems you know where to reach me!!
 
 You also have the working CNN notebook. I managed to fix it and now it converges. Just need to play with the parameters and fine tuning of the model to make score good.
+
+## 10-10-2018 Daniels Update
+
+I did play around the work book abit. with the below adjustmets =  Achieved .8862 
+
+learning-rate=0.1 minibatch=128 samples_per_sweep=240000 sweeps=10
+
+will continue playing around it to see
