@@ -130,3 +130,7 @@ I did play around the work book abit. with the below adjustmets =  Achieved .886
 learning-rate=0.1 minibatch=128 samples_per_sweep=240000 sweeps=10
 
 will continue playing around it to see
+
+## 11-10-2018
+
+That's good to hear buddy!! Now we both passed!! I still trying to figure out how to build a good CNN, i still working on it, i'll get back to you if i get something right ;)
